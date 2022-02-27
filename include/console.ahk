@@ -55,7 +55,7 @@ class __Console
 		this.stdout := FileOpen(DllCall("GetStdHandle", "int", -11, "ptr"), "h `n")
 		this.stdin  := FileOpen(DllCall("GetStdHandle", "int", -10, "ptr"), "h `n")
 
-		this.__is_created := true
+		__Console.__is_created := true
 		return this
 	}
 
